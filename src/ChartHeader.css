@@ -1,0 +1,52 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.title{
+    font-family: 'Poppins', sans-serif;
+}
+.Chart-Container{
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    padding-left: 10%;
+    left: 11%;
+    flex-direction: row;
+}
+.left{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.right
+{
+    
+    display: flex;
+    flex-direction: row;
+    width:50%   
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;}
+    .range-Button{
+       
+        padding: 2rem;
+        float: left;
+    }
+    .btn{
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        width: 10rem;
+        padding: 8px;
+        background-color: #33b7ff;
+    }
+    .date-button{
+        width: 100%;
+        padding-right: 5px;
+        padding-top: 45px;
+        float: right;
+        color: #33b7ff;
+    }
+    .date-button a{
+        padding-right:1rem ;
+    }
