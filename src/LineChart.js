@@ -23,75 +23,55 @@ chartjs.register(
 const LineChart = () => {
    
     const state = {
-      labels: ['labels','labels','labels','labels','labels'],
+      labels: ['labels','labels','labels','labels'],
       datasets: [{
         label: 'My First Dataset',
-        data: [40, 67, 80, 81, 56, 55, 40],
+        data: [40, 67, 80, 89],
         backgroundColor: [
-        'black'
+        '#ffc981'
         ],
         borderColor: [
-         'black'
+            '#ffc981'
         ],
-        borderWidth: 3,
+        border:'none',
+        borderCapStyle:'butt',
         type:'line',
         tension:0.4
       },{
-        label: 'My First Dataset',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        label: 'My second Dataset',
+        data: [  10,12,0,5],
         backgroundColor: [
-          'red','blue'
+           ' #8bc682'
         ],
-        borderColor: [
-          'rgb(255, 99, 132)',
-          'rgb(255, 159, 64)',
-          'rgb(255, 205, 86)',
-          'rgb(75, 192, 192)',
-          'rgb(54, 162, 235)',
-          'rgb(153, 102, 255)',
-          'rgb(201, 203, 207)'
+    
+        
+
+        type:'bar',
+        
+      },{
+        label: 'My third Dataset',
+        data: [ 0,20,4,10],
+        backgroundColor: [
+            '#ea5b5a'
         ],
+        
+        
+        borderWidth: 1,
+        type:'bar',
+        
+      },{
+        label: 'My fourth Dataset',
+        data: [ 4,0,20,10],
+        backgroundColor: [
+          '  #1f7fc6'
+        ],
+       
         borderWidth: 1,
         type:'bar',
         
       }]
     };
-//     const dataLine={
-//         labels:['monday','tuesday','thursday'],
-//         datasets:[
-//             {
-//                 label:'Support Balance',
-//                 data:[6,3,9 ],
-//                 backgroundColor:'orange',
-//                 borderColor:'black',
-//                 pointBorderColor:'aqua',
-//                 fill:true,
-//                 tension:0.4,   } ,
-//             {
-//                 label:'Support added',
-//                 data:[6,3,9 ],
-//                 backgroundColor:'green',
-//                 borderColor:'black',
-//                 pointBorderColor:'aqua',
-//                 fill:true,
-//                 tension:0.4, 
-//             } , {
-//                 label:'Support Used',
-//                 data:[6,3,9 ],
-//                 backgroundColor:'red',
-//                 borderColor:'black',
-//                 pointBorderColor:'aqua',
-//                 fill:true,
-//                 tension:0.4, 
-//             }  , {
-//                 label:'Warranty Used',
-//                 data:[6,3,9 ],
-//                 backgroundColor:'blue',
-//                 borderColor:'black',
-//                 pointBorderColor:'aqua',
-//                 fill:true,
-//                 tension:0.4, 
-//             }        ]    }
+
             const options={
                 plugins:{
                     legend:true
@@ -112,9 +92,7 @@ const LineChart = () => {
         <ChartHeader/>
         
         <div style={{width:'60rem',height:'50rem',marginLeft:'10rem'}}>
-        {/* <Line data={dataLine}
-        options={options}>
-        </Line> */}
+      
         <Bar data={state} options={options}>
             </Bar></div>
     </div>
